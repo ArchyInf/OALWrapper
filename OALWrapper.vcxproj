@@ -48,11 +48,12 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <MinimalRebuild>true</MinimalRebuild>
+      <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -67,11 +68,13 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="sources\OAL_AudioData.cpp" />
     <ClCompile Include="sources\OAL_Buffer.cpp" />
+    <ClCompile Include="sources\OAL_CustomStream.cpp" />
     <ClCompile Include="sources\OAL_Device.cpp" />
     <ClCompile Include="sources\OAL_Effect.cpp" />
     <ClCompile Include="sources\OAL_Effect_Reverb.cpp" />
@@ -96,6 +99,7 @@
   <ItemGroup>
     <ClInclude Include="include\OALWrapper\OAL_AudioData.h" />
     <ClInclude Include="include\OALWrapper\OAL_Buffer.h" />
+    <ClInclude Include="include\OALWrapper\OAL_CustomStream.h" />
     <ClInclude Include="include\OALWrapper\OAL_Device.h" />
     <ClInclude Include="include\OALWrapper\OAL_Effect.h" />
     <ClInclude Include="include\OALWrapper\OAL_Effect_Reverb.h" />
