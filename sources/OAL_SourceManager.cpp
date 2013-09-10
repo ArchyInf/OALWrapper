@@ -9,9 +9,9 @@
 #include "OALWrapper/OAL_Source.h"
 #include "OALWrapper/OAL_Device.h"
 
-#include <SDL_thread.h>
-#include <SDL_timer.h>
-#include <SDL_version.h>
+#include <SDL/SDL_thread.h>
+#include <SDL/SDL_timer.h>
+#include <SDL/SDL_version.h>
 
 //-----------------------------------------------------------------------------------
 
